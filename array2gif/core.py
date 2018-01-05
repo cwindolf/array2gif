@@ -97,6 +97,7 @@ def get_color_table_size(num_colors):
     Screen Descriptor block.
     """
     nbits = max(math.ceil(math.log(num_colors, 2)), 2)
+    print('ncols', num_colors)
     return '{:03b}'.format(int(nbits - 1))
 
 
