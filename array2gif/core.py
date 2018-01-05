@@ -121,6 +121,8 @@ def _get_logical_screen_descriptor(image, colors):
     )
     background_color_index = 0
     pixel_aspect_ratio = 0
+    print('a2g:::')
+    print(width, height, packed_bits, background_color_index, pixel_aspect_ratio)
     logical_screen_descriptor = struct.pack(
         '<HHBBB',
         width,
