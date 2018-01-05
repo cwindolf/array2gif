@@ -112,6 +112,8 @@ def _get_logical_screen_descriptor(image, colors):
     color_resolution = '001'
     colors_sorted_flag = '0'  # even though I try to sort
     size_of_global_color_table = get_color_table_size(len(colors))
+    print(size_of_global_color_table)
+    print('needs to be <=', 0b111)
     packed_bits = int(
         global_color_table_flag +
         color_resolution +
